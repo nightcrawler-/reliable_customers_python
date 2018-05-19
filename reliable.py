@@ -59,7 +59,6 @@ def get_best_customer(transactions_csv_file_path, n):
 	#tie break sort
 	#slice
 	#might need to go from dict to list as now only account with relevant data appear
-	print '#####################'
 	for account in customers.values():
 		account[3].sort(reverse=True)
 		account.append(account[3][0])
